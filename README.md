@@ -1,116 +1,96 @@
-🌟 Campus Sports Sphere - Admin (Part 01) 🌟
+# 🏆 Campus Sports Sphere - Inventory Management System
 
-🎓 Final Year Project - Inventory Management System for Campus Sports Equipment 🏅
+## Administrative Module (Phase 1)
 
-Welcome to the Campus Sports Sphere project! This is the first phase of an innovative system designed to streamline the reservation and management of sports equipment in university settings. With this app, users can effortlessly reserve sports equipment like footballs, tennis rackets, and cricket bats, making the rental process easier for students and faculty alike. 🏆⚽🎾
+### Overview
+Welcome to **Campus Sports Sphere** - a comprehensive inventory management system designed specifically for university sports departments. This innovative platform streamlines the reservation and management of athletic equipment, creating a seamless experience for both administrators and users.
 
-🚀 Key Features
+With our intuitive interface, students and faculty can easily browse and reserve equipment ranging from footballs and tennis rackets to cricket bats and beyond, while administrators maintain complete control over inventory and usage analytics.
 
-🔑 User Registration & Authentication
+### ✨ Core Features
 
-✅ Secure Firebase Authentication for seamless sign-up and login.
+#### User Authentication
+- Secure Firebase Authentication system
+- Role-based access control for administrators and users
+- Personalized dashboards based on user type
 
-📦 Equipment Management
+#### Equipment Management
+- Complete CRUD operations for sports equipment inventory
+- Real-time availability updates via Firebase Firestore
+- Equipment categorization and search functionality
+- Equipment condition tracking and maintenance scheduling
 
-✅ Admins can add, edit, and remove equipment to maintain an up-to-date inventory.
+#### Reservation System
+- Intuitive equipment reservation workflow
+- Automated confirmation and reminder notifications
+- Visual calendar for reservation timeline management
 
-📊 Report Generation
+#### Analytics & Reporting
+- Customized report generation in PDF and CSV formats
+- Equipment utilization metrics and insights
+- Historical reservation data tracking
+- Export capabilities for administrative purposes
 
-✅ Generate detailed PDF and CSV reports for reservations and equipment usage.
+### 🛠️ Technical Architecture
 
-⚡ Real-Time Data Updates
+**Frontend**: React.js with Material UI components  
+**Backend**: Node.js with Express framework  
+**Database**: Firebase Firestore for real-time data management  
+**Authentication**: Firebase Authentication services  
+**Hosting**: Firebase Hosting platform
 
-✅ Firebase Firestore ensures up-to-date equipment availability.
+### 📋 Setup Guide
 
-💻 User-Friendly Dashboard
+#### Prerequisites
+- Node.js (v14+)
+- npm or yarn package manager
+- Firebase account access
+- Git version control
 
-✅ A sleek, intuitive interface for managing reservations and viewing available items.
+#### Installation Steps
 
-🛠️ Tech Stack
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/araneeskhan/CampusSportsSphere
+   ```
 
-Frontend: React.js ⚛️
+2. **Install dependencies**
+   ```bash
+   # Backend setup
+   cd backend
+   npm install
 
-Backend: Node.js 🚀
+   # Frontend setup
+   cd ../frontend
+   npm install
+   ```
 
-Database: Firebase Firestore 📱
+3. **Firebase Configuration**
+   - Create or use an existing Firebase project
+   - Enable Authentication and Firestore services
+   - Add your Firebase configuration to `firebaseConfig.js`
 
-Authentication: Firebase Authentication 🔑
+4. **Launch development environment**
+   ```bash
+   # Start backend server
+   cd backend
+   node index.js
 
-📋 Installation Guide
+   # Start frontend application
+   cd ../frontend
+   npm start
+   ```
 
-🔧 Prerequisites
+Your application will be running at [http://localhost:3000](http://localhost:3000)
 
-Ensure you have the following installed on your machine:
+### 👨‍💼 Administrator Functions
 
-Node.js 🟢
+As an administrator, you'll have access to:
+- Complete inventory management tools
+- User account oversight and management
+- Reservation approval workflows
+- System configuration settings
+- Comprehensive analytics dashboard
+- Report generation capabilities
 
-npm 📦
 
-A Firebase account 🔥
-
-🏗️ Setup Instructions
-
-Clone the repository:
-
-git clone https://github.com/araneeskhan/CampusSportsSphere
-
-Install Dependencies:
-
-cd backend
-npm install
-cd ../frontend
-npm install
-
-Configure Firebase:
-
-Navigate to Firebase Console.
-
-Create a new project or use an existing one.
-
-Add your Firebase credentials (API Key, Auth Domain, etc.) to firebaseConfig.js.
-
-Start Development Servers:
-
-Backend:
-
-node index.js
-
-Frontend:
-
-npm start
-
-🎉 Your app will be live at http://localhost:3000 🎉
-
-Note: Ensure Firebase credentials are properly set in the backend config file for server-side operations. 🔑
-
-🖥️ Usage
-
-🔹 For Admins
-
-Manage the inventory: Add, edit, and remove sports equipment.
-
-Handle reservations: View and manage all user reservations efficiently.
-
-🤝 Contributing
-
-We welcome contributions to make this project even better! Here's how you can contribute:
-
-Fork the repository.
-
-Create a new branch:
-
-git checkout -b feature-name
-
-Make your changes 💻.
-
-Commit your changes:
-
-git commit -m 'Add new feature'
-
-Push your changes:
-
-git push origin feature-name
-
-Create a pull request from your fork to the main repository.
-
-🚀 Thank you for being part of Campus Sports Sphere! 🙌
